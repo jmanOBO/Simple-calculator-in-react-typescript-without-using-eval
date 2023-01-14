@@ -9,7 +9,7 @@ const EqualsBtn = () => {
         const nums: number[]=str.split(reg).map((num)=>parseInt(num));
         const ops: string[]=[];
         for(let i=0; i<str.length; i++){
-            if(!parseInt(str[i])) ops.push(str[i]);
+            if(!parseInt(str[i])&&str[i]!=="0") ops.push(str[i]);
         }
 
       let solution=nums[0];
