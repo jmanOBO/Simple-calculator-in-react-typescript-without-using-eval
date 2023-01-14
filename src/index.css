@@ -1,0 +1,45 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px
+ 
+}
+
+.typingArea{
+ display: flex;
+ flex-wrap: wrap;
+ 
+}
+.numBtn, .opBtn{
+  width: 25%;
+ margin-top: 20px;
+ height: 60px
+}
+.equalsBtn,.cBtn{
+  width: 50%;
+  margin-top: 20px;
+  height: 60px
+}
+.TextInput{
+  display: flex;
+  height: 50px;
+
+}
+
+.TextArea{
+  flex:1;
+  flex-wrap: wrap;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  
+
+  
+}
