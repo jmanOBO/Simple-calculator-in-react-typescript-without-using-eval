@@ -4,8 +4,9 @@ interface NumTpe{
     num: number
 }
 const NumBtn = ({num}:NumTpe) => {
-    const {setCalcStr}=useCalc();
+    const {calcStr,setCalcStr}=useCalc();
     const handleOnClick=()=>{
+      if(num==0&&calcStr.length<1) return;
       setCalcStr((str)=>str+num);
     }
   return (
